@@ -92,6 +92,8 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 - 강의 수강 화면 캡처
 - 문제 풀이 정답 화면 캡처
 - SQL 실행 결과 화면 캡처
+<img width="1160" height="1082" alt="image" src="https://github.com/user-attachments/assets/88af71b5-9e1b-41a0-8f1d-ba1ea6fe6fdb" />
+<img width="2068" height="1046" alt="image" src="https://github.com/user-attachments/assets/8252c3cf-e6e9-49e1-a2f4-bc59f1aaceac" />
 
 ---
 
@@ -108,10 +110,17 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 ```
 - 테이블에서 확인한 컬럼:
 - SELECT와 FROM을 작성한 방식:
+  SELECT
+     *
+  FROM
+   ANIMAL_INS
+  ORDER BY
+   ANIMAL_ID
 - 새로 배운 점:
 ```
+<img width="2804" height="1504" alt="image" src="https://github.com/user-attachments/assets/6df32d05-2cfd-48b6-9510-0d01600a76ab" />
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+
 
 ## 🧩 문제 2
 
@@ -123,10 +132,18 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 - 문제에서 요구한 조건:
 - WHERE 절로 옮긴 방식:
 - 정렬 기준이 있다면 사용한 기준:
+SELECT 
+    ANIMAL_ID,
+    NAME
+FROM 
+    ANIMAL_INS
+WHERE 
+    INTAKE_CONDITION = 'Sick'
+ORDER BY
+    ANIMAL_ID
 - 새로 배운 점:
 ```
-
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="2558" height="1456" alt="image" src="https://github.com/user-attachments/assets/0b6d5b6c-26ed-45c6-a0b4-387368346ea1" />
 
 ---
 
@@ -134,7 +151,7 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 
 ```
 1. SELECT, FROM, WHERE 중 가장 헷갈린 개념:
-2. 문제를 풀 때 가장 자주 확인하게 된 부분:
+2. 문제를 풀 때 가장 자주 확인하게 된 부분: id AS를 할 때 뒤에 컬럼 이름에 따옴표 넣으면 안됨!!
 3. 다음 주 문제 풀이에서 의식하고 싶은 습관:
 ```
 
