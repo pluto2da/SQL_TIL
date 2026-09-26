@@ -129,6 +129,7 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 문제 링크: [특정 옵션이 포함된 자동차 리스트 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/157343)
 
 풀이 과정: 
+```
   SELECT 
     CAR_ID, CAR_TYPE, DAILY_FEE, OPTIONS
   FROM 
@@ -137,6 +138,7 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
     OPTIONS LIKE '%네비게이션%'
   ORDER BY
     CAR_ID DESC
+```
 
 ```
 - 찾으려는 문자열 조건: OPTIONS 컬럼 내에 '네비게이션'이라는 키워드가 포함되어 있는지 여부를 찾고자 했다.
@@ -145,13 +147,15 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 - 정렬 기준: 자동차 ID(CAR_ID) 컬럼을 기준으로 한 내림차순 정렬 기준이다. 문제 요구사항에 따라 번호가 큰 차량부터 먼저 출력되도록 설정한다.
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="2256" height="1494" alt="image" src="https://github.com/user-attachments/assets/6967ab42-0ddb-4efe-b2ce-442b9bc54d8c" />
+
 
 ## 🧩 문제 2
 
 문제 링크: [강원도에 위치한 생산공장 목록 출력하기](https://school.programmers.co.kr/learn/courses/30/lessons/131112)
 
 풀이 과정:
+```
   SELECT 
     FACTORY_ID, FACTORY_NAME, ADDRESS
   FROM
@@ -160,6 +164,7 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
     ADDRESS LIKE '강원도%'
   ORDER BY
     FACTORY_ID ASC
+```
 
 ```
 - 문제에서 요구한 조건:
@@ -170,13 +175,15 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
   ORDER BY FACTORY_ID ASC를 사용하여 문자열 및 숫자 조합 기준 오름차순(사전순)으로 가장 빠른 값부터 차례대로 출력하도록 설정한다. 오름차순이 기본값이라 ASC는 생략해도 괜찮다.
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="2056" height="1438" alt="image" src="https://github.com/user-attachments/assets/734618e5-22bc-4563-a9ee-5d312dac39f7" />
+
 
 ## 🧩 문제 3
 
 문제 링크: [이름에 el이 들어가는 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59047)
 
 풀이 과정:
+```
   SELECT
     ANIMAL_ID, NAME
   FROM
@@ -186,6 +193,7 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
     AND LOWER(NAME) LIKE '%el%'
   ORDER BY
     NAME ASC, ANIMAL_ID ASC
+```
 
 ```
 - 찾으려는 문자열 패턴:
@@ -195,13 +203,15 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 - 정렬 기준: 1차적으로 이름(NAME)을 기준으로 오름차순 정렬하고, 이름이 중복되는 경우를 대비해 2차적으로 동물 아이디를 기준으로 오름차순 정렬하는 다중 정렬 조건을 지정했다.
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="2096" height="1520" alt="image" src="https://github.com/user-attachments/assets/d111d9db-accd-4916-b137-98070cbc661a" />
+
 
 ## 🧩 문제 4
 
 문제 링크: [카테고리 별 상품 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/131529)
 
 풀이 과정:
+```
   SELECT 
     SUBSTRING(PRODUCT_CODE, 1, 2) AS CATEGORY, COUNT(PRODUCT_ID) AS PRODUCTS
   FROM
@@ -210,6 +220,7 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
     SUBSTRING(PRODUCT_CODE, 1, 2)
   ORDER BY
     CATEGORY ASC
+```
 
 ```
 - 추출한 문자열 범위:
@@ -220,7 +231,8 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
   카테고리 코드 컬럼을 기준으로 오름차순 정렬하면 된다. 알파벳 순서상 빠른 카테고리 코드부터 차례대로 출력된다.
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="2752" height="1464" alt="image" src="https://github.com/user-attachments/assets/16c8d7bf-f4d4-457e-b576-8c304e34e34a" />
+
 
 ---
 
