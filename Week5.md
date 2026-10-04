@@ -112,10 +112,8 @@ IF문은 공통적으로 프로그래밍 언어에서 정말 많이 쓰이는데
 # 2️⃣ 수행 인증란
 
 아래 중 하나 이상을 첨부해주세요.
+<img width="790" height="856" alt="image" src="https://github.com/user-attachments/assets/ee73b44d-7243-4599-b866-21650e686f00" />
 
-- 강의 수강 화면 캡처
-- 문제 풀이 정답 화면 캡처
-- SQL 실행 결과 화면 캡처
 
 ---
 
